@@ -14,14 +14,14 @@ public class ShouldFind {
         given()
                 .baseUri("https://postman-echo.com")
                 .contentType("text/plain; charset=UTF-8")
-                .body("Школа Нетология") // отправляемые данные (заголовки и query можно выставлять аналогично)
+                .body("Тестировщик") // отправляемые данные (заголовки и query можно выставлять аналогично)
 // Выполняемые действия
                 .when()
                 .post("/post")
 // Проверки
                 .then()
                 .statusCode(200)
-                .body("data", equalTo("Школа Нетология"));
+                .body("data", equalTo("Тестировщик" ));
 
 
 
